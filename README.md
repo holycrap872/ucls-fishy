@@ -53,7 +53,9 @@ goals, move onto the next part.
 
 ## Read the Code
 
-Look through the code and try and understand it. Pay particular attention to:
+Look through the code and try and understand it. In particular, spend around
+three to four minutes understanding each of the following topics (since they are
+both new and a bit tricky):
 
 - The `User` class that has the ability to move in various direction, grow, and die
 - The `Dinner` class that has the ability to move and reset
@@ -61,7 +63,7 @@ Look through the code and try and understand it. Pay particular attention to:
     - Note: It does this by using the "distance formula"
 - How we create a `user_fish` and a single `other_fish` in our initialization
 - How the `user_fish` can only move up (but not down)
-- How the single `other_fish` can move across the screen
+- How the single `other_fish` starts on either the left OR right side of the screen
 
 ## Modify the Code
 
