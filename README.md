@@ -21,32 +21,12 @@ is:
 Open `vscode` and select `File` -> `Open Workspace from File`. Then, select the
 `fishy.code-workspace` file within this project folder.
 
-### 1. Install Necessary Extensions
-
-On the left-most side of the `vscode` window, select the "Extensions" tab (four
-small squares making a larger square) and install the following extensions:
-
-- `Python`
-- `Pylance` (auto installed with `Python` extension)
-- `Black Formatter`
-- `isort`
-
-> Note: be careful to select **only** the "Microsoft approved" extensions.
-
-### 2. Install Necessary Python Modules
-
-Open the terminal window by selecting `Terminal` -> `New Terminal`. Then,
-install all the required libraries by typing:
-
-```
-pip3 install pytest pygame
-```
-
-### 3. Verify it Runs
+### 1. Verify it Runs
 
 You now should be able to run the program and see a white "user fish" and a red
-"dinner fish" against a black background. Assuming you have that, move onto the
-next task.
+"dinner fish" against a black background. To do this, open the
+`src/fishy/main.py` file and click the "play button" at the top right.
+Assuming you see the two "fish", move onto the next task.
 
 ## Game Development
 
