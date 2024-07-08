@@ -23,25 +23,25 @@ def get_rgb_color(color_str):
 
 
 class User:
-    def __init__(self, x, y, lives) -> None:
+    def __init__(self, x, y, lives):
         self.x = x
         self.y = y
         self.size = 20
         self.lives = lives
 
-    def move_left(self) -> None:
+    def move_left(self):
         self.x = self.x - 3
 
-    def move_right(self) -> None:
+    def move_right(self):
         self.x = self.x + 3
 
-    def move_up(self) -> None:
+    def move_up(self):
         self.y = self.y - 3
 
-    def move_down(self) -> None:
+    def move_down(self):
         self.y = self.y + 3
 
-    def grow(self) -> None:
+    def grow(self):
         self.size = self.size * 1.1
 
     def die(self):
@@ -52,7 +52,7 @@ class User:
 
 
 class Dinner:
-    def __init__(self, width, height) -> None:
+    def __init__(self, width, height):
         self.y = random.randint(0, height)
         self.size = random.randint(4, 70)
         if random.randint(0, 1) == 1:
@@ -62,10 +62,10 @@ class Dinner:
             self.speed = random.randint(3, 7) * -1
             self.x = width
 
-    def move(self) -> None:
+    def move(self):
         self.x = self.x + self.speed
 
-    def reset(self, width, height) -> None:
+    def reset(self, width, height):
         print("I need to add code here to reset")
 
 
@@ -88,17 +88,17 @@ def is_colliding(*, x1, y1, radius1, x2, y2, radius2):
         return True
 
 
-def play_game(screen, width, height) -> None:
+def play_game(screen, width, height):
     # Initialize variables used in game
-    keepGoing = True
+    keep_going = True
 
     user_fish = User(width // 2, height // 2, 3)
     other_fishes = [Dinner(width, height)]
 
-    while keepGoing:
+    while keep_going:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                keepGoing = False
+                keep_going = False
 
         # Get user input
         keys = pygame.key.get_pressed()
