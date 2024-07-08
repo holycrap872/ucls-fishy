@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from pong.main import get_rgb_color
+from fishy.main import get_rgb_color
 
 
 def test_get_rgb_color_1() -> None:
