@@ -88,7 +88,7 @@ following tasks in order:
 6. Have a "score" variable that shows how many fish the user has eaten
     - Hint: You will need to create your own variable
 7. Reset the game when the user runs out of lives
-8. Instead of having one "dinner fish" have a a bunch of them
+8. Instead of having one "dinner fish" have a bunch of them
     - Hint: Add more fish to the `other_fishes` list
     - Hint: Use a loop to iterate through all the `other_fishes` and move them all
 
@@ -96,7 +96,7 @@ following tasks in order:
 
 The hardest part of developing this game is to really understand what the `User`
 and `Dinner` classes are for. Basically, they hold the bundle of data that is
-required to represent a user or dinner fish. We then user "helper functions"
+required to represent a user or dinner fish. We then use "helper functions"
 (methods) to make it easy to manipulate that data.
 
 For example, rather than directly altering the dinner fish's `x` or `y`, we can
