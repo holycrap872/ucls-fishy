@@ -105,7 +105,7 @@ def play_game(screen, width, height):
         if keys[pygame.K_UP]:
             user_fish.move_up()
 
-        # Move characters
+        # Move non-player characters
 
         # Check for collisions
 
